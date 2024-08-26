@@ -1,0 +1,100 @@
+body {
+    /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font
+     */
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: auto;
+    padding: 5em;
+   }
+  
+h1 {
+  font-size: 300%;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h2 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+  display: flex;
+  margin-bottom: 0.5em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+}
+
+.ul-nav {
+  display: contents;
+}
+
+.ul-nav .li{
+  display: contents;
+}
+
+.current {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  color: inherit; 
+  text-align: center; 
+  padding: 0.4em;
+  border-bottom-width: 0.4em;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+    &:hover {
+      border-bottom-width: 0.4em;
+      border-bottom-style: solid;
+      border-bottom-color: var(--color-accent);
+      background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+    }
+}
+
+a {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  color: inherit; 
+  text-align: center;
+  padding: 0.5em;
+  &:hover {
+    border-bottom-width: 0.4em;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-accent);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+  }
+}
+
+html {
+  --color-accent: oklch(50.44% 0.184 274.59);
+  color-scheme: light dark;
+}
+
+img {
+  max-width: 100%;
+}
+
+.projects {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
+article {
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  &:h2 {
+    margin:0;
+  }
+}
+
+.color-select{
+  position:absolute;
+  top:1rem;
+  right:1rem;
+  font: inherit;
+}

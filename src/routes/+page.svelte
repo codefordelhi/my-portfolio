@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+	<title>Code for Delhi</title>
+</svelte:head>
+    <h1>Code for Delhi</h1>
+    <p>A collection from our art practice</p>
+    <img src="images/sundarbans_thumb.PNG" alt="A generative art poster">
